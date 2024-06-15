@@ -12,28 +12,30 @@ import Colors from '../Styles/Colors';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
+import {
+  AnimatedTabBarNavigator,
+  DotSize,
+  TabElementDisplayOptions,
+} from 'react-native-animated-nav-tab-bar';
 import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import Icon from 'react-native-vector-icons/Feather';
 
-import Report from "../Screens/MainScreens/Report";
 import Home from "../Screens/MainScreens/Home";
-import Message from "../Screens/MainScreens/Message";
-import Profile from "../Screens/MainScreens/Profile";
+import Categories from "../Screens/MainScreens/Categories";
+import Profile from "../Screens/MainScreens/AboutMe";
 
 
 type BottomStackParamList = {
-  ReportTab: undefined,
   HomeTab: undefined,
-  MessageTab: undefined,
+  CategoriesTab: undefined,
   ProfileTab: undefined,
 };
-type ReportStackParamList = {
-  Report: undefined,
-};
+
 type HomeStackParamList = {
   Home: undefined,
 };
-type MessageStackParamList = {
-  Message: undefined,
+type CategoriesStackParamList = {
+  Categories: undefined,
 };
 type ProfileStackParamList = {
   Profile: undefined,
@@ -46,25 +48,31 @@ export function navigate(name: any, params: any) {
   navigationRef.current?.navigate(name, params);
 }
 
+const Tabs = AnimatedTabBarNavigator();
+
+const TabBarIcon = (props: any) => {
+  return (
+    <Icon
+      name={props.name}
+      size={props.size ? props.size : 24}
+      color={props.tintColor}
+    />
+  );
+};
+
+// const Screen = styled.View`
+//   flex: 1;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: #f2f2f2;
+// `;
+
 const Tab = createBottomTabNavigator<BottomStackParamList>();
-const ReportStack = createStackNavigator<ReportStackParamList>();
 const HomeStack = createStackNavigator<HomeStackParamList>();
-const MessageStack = createStackNavigator<MessageStackParamList>();
+const CategoriesStack = createStackNavigator<CategoriesStackParamList>();
 const ProfileStack = createStackNavigator<ProfileStackParamList>();
 
 
-
-export const ReportStacks = () => {
-  return (
-    <ReportStack.Navigator initialRouteName="Report"
-      screenOptions={{
-        headerShown: false,
-      }}>
-      <ReportStack.Screen name="Report" component={Report} />
-
-    </ReportStack.Navigator>
-  );
-}
 
 export const HomeStacks = () => {
   return (
@@ -77,15 +85,15 @@ export const HomeStacks = () => {
   );
 }
 
-const MessageStacks = () => {
+const CategoriesStacks = () => {
   return (
-    <MessageStack.Navigator initialRouteName="Message"
+    <CategoriesStack.Navigator initialRouteName="Categories"
       screenOptions={{
         headerShown: false,
       }}>
-      <MessageStack.Screen name="Message" component={Message} />
+      <CategoriesStack.Screen name="Categories" component={Categories} />
 
-    </MessageStack.Navigator>
+    </CategoriesStack.Navigator>
   )
 }
 
@@ -103,74 +111,51 @@ const ProfileStacks = () => {
 
 
 
-
-
-
 export const BottomTabView = (props: any) => {
   // let unreadChatCount = props?.chat?.unreadChatCount?.count ? props?.chat?.unreadChatCount?.count : 0
   let unreadChatCount = 1
   return (
-    <Tab.Navigator
-      screenOptions={({ route }) => ({
-        headerShown: false,
-        tabBarIcon: ({ focused }) => {
-          let image;
-          let name;
-
-          if (route.name === 'HomeTab') {
-            image = Images.home;
-            name = "Home"
-          }
-          else if (route.name === 'ReportTab') {
-            image = Images.report;
-            name = "Report"
-          }
-          else if (route.name === 'MessageTab') {
-            image = Images.message;
-            name = "Inbox"
-          }
-          else if (route.name === 'ProfileTab') {
-            image = Images.profile;
-            name = "Profile"
-          }
-
-
-          return (
-            <>
-              <View style={{ alignSelf: 'center', alignItems: 'center', justifyContent: 'center' }}>
-                <Image source={image} style={{
-                  marginTop: hp(1.5),
-                  width: 24,
-                  height: 24,
-                  tintColor: focused ? Colors.Blue : "rgba(255, 255, 255, 0.5)"
-                }} />
-                <Text
-                  style={{
-                    marginTop: hp(1),
-                    fontSize: 12,
-                    fontFamily: "Inter-Regular",
-                    color: focused ? Colors.Blue : "rgba(255, 255, 255, 0.5)"
-                  }}>{name}</Text>
-              </View>
-            </>
-          );
-        },
-        tabBarStyle: {
-          height: hp(12),
-          backgroundColor: Colors.RichBlack,
-          borderTopWidth: 1,
-          borderTopColor: Colors.CyanBlue,
-          position: 'absolute',
-          overflow: 'hidden',
-        },
-        tabBarShowLabel: false
-      })}>
-
-      <Tab.Screen name="HomeTab" component={HomeStacks} />
-      <Tab.Screen name="ReportTab" component={ReportStacks} />
-      <Tab.Screen name="MessageTab" component={MessageStacks} />
-      <Tab.Screen name="ProfileTab" component={ProfileStacks} />
-    </Tab.Navigator>
+    <Tabs.Navigator
+      initialRouteName="HomeTab"
+      tabBarOptions={{
+        activeTintColor: '#ffffff',
+        inactiveTintColor: '#223322',
+        activeBackgroundColor: 'red',
+      }}
+      appearance={{
+        shadow: true,
+        floating: true,
+        whenActiveShow: TabElementDisplayOptions.ICON_ONLY,
+        dotSize: DotSize.SMALL,
+      }}>
+      <Tabs.Screen
+        name="HomeTab"
+        component={HomeStacks}
+        options={{
+          tabBarIcon: ({ focused, color }: any) => (
+            <TabBarIcon focused={focused} tintColor={color} name="home" />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="CategoriesTab"
+        component={CategoriesStacks}
+        options={{
+          tabBarIcon: ({ focused, color }: any) => (
+            <TabBarIcon focused={focused} tintColor={color} name="grid" />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Profile"
+        component={ProfileStacks}
+        options={{
+          tabBarIcon: ({ focused, color }: any) => (
+            <TabBarIcon focused={focused} tintColor={color} name="user" />
+          ),
+        }}
+      />
+     </Tabs.Navigator>
   );
 }
 
