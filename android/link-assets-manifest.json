@@ -1,0 +1,165 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "Src/Assets/Fonts/DMSerifDisplay-Italic.ttf",
+      "sha1": "ebfa39e71429e48cb35906620f4c98cd69be925b"
+    },
+    {
+      "path": "Src/Assets/Fonts/DMSerifDisplay-Regular.ttf",
+      "sha1": "52571de962e2d8f26c20406d2400ec77676001b2"
+    },
+    {
+      "path": "Src/Assets/Fonts/Inter-Black.ttf",
+      "sha1": "f79fa58ace5f55e338c99bf71e7e0702841df6f2"
+    },
+    {
+      "path": "Src/Assets/Fonts/Inter-Bold.ttf",
+      "sha1": "47ff07c75746682133b81e7ac0537ce50a4c9916"
+    },
+    {
+      "path": "Src/Assets/Fonts/Inter-ExtraBold.ttf",
+      "sha1": "c9b3d2f2449ab2c67ff075f806973fa3d7e104b3"
+    },
+    {
+      "path": "Src/Assets/Fonts/Inter-ExtraLight.ttf",
+      "sha1": "f78ee1d6cbfc64f656247c604ef270ef116abbf5"
+    },
+    {
+      "path": "Src/Assets/Fonts/Inter-Light.ttf",
+      "sha1": "cbb2506d8da21edbb2dc8cfa26e3b42a97d138f8"
+    },
+    {
+      "path": "Src/Assets/Fonts/Inter-Medium.ttf",
+      "sha1": "e76f580811e031813e7150131a0724811cdd737a"
+    },
+    {
+      "path": "Src/Assets/Fonts/Inter-Regular.ttf",
+      "sha1": "cfa780d0b50b2bb7eacb82984f1b18a95aaa40c5"
+    },
+    {
+      "path": "Src/Assets/Fonts/Inter-SemiBold.ttf",
+      "sha1": "5e0c44e57e7e090252d79f622899e67585bb892c"
+    },
+    {
+      "path": "Src/Assets/Fonts/Inter-Thin.ttf",
+      "sha1": "757805e615c974756646e54ceff8e409d5c47207"
+    },
+    {
+      "path": "Src/Assets/Fonts/PlaywriteUSTrad-ExtraLight.ttf",
+      "sha1": "5a8220391ec89693456786d1d1837f361d86e112"
+    },
+    {
+      "path": "Src/Assets/Fonts/PlaywriteUSTrad-Light.ttf",
+      "sha1": "f29be1bb1d11f27da0715db034e2245ae665ffd4"
+    },
+    {
+      "path": "Src/Assets/Fonts/PlaywriteUSTrad-Regular.ttf",
+      "sha1": "80f494a7514dd05af54b4d21620c083302d9d368"
+    },
+    {
+      "path": "Src/Assets/Fonts/PlaywriteUSTrad-Thin.ttf",
+      "sha1": "09c8522f3c53fe1749db756f6bcf50b07cfb8010"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-Black.ttf",
+      "sha1": "645e04c53c6b5b35bce654a811ebce16af8aa721"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-BlackItalic.ttf",
+      "sha1": "be4ef2aac7775a4b0179c0ecfce6cea8f7783f63"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-Bold.ttf",
+      "sha1": "875cf0cecd647bcf22e79d633d868c1b1ec98dfa"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-BoldItalic.ttf",
+      "sha1": "6de8952ca08d27ee77f57347d2cef4b4e26aa78f"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-ExtraBold.ttf",
+      "sha1": "4b5c0750f073abd576413a0898d3b95adaf199c8"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-ExtraBoldItalic.ttf",
+      "sha1": "94d3ee3acdbd00e37a715a25f2b5237666b5b8a3"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-ExtraLight.ttf",
+      "sha1": "85af6582a7e6155917c605f9d3fed68c02b23b06"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-ExtraLightItalic.ttf",
+      "sha1": "6fa0418f91032680d2d8fe4843009f2c80faa61d"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-Italic.ttf",
+      "sha1": "e2bfcd56016c3c915221ef1c5fc1a17b0776eb91"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-Light.ttf",
+      "sha1": "e247a92158e112f8bf7b638c8d95381d66b00dbb"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-LightItalic.ttf",
+      "sha1": "f76102b361e705751a83b7b22fe954daf1f27dd4"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-Medium.ttf",
+      "sha1": "283f21b44efbdbf276ba802be2d949a36bbc4233"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-MediumItalic.ttf",
+      "sha1": "b592c62fdf88c40cfd0f031bba6423b1d4430472"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-Regular.ttf",
+      "sha1": "fdd3002e7d814ee47c1c1b8487c72c6bbb3a2d00"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-SemiBold.ttf",
+      "sha1": "8a4ace9392d06bcb7f8ea2f5169b07e4c383a90d"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-SemiBoldItalic.ttf",
+      "sha1": "0c8bed0a5942b2388d36b11c115685d9f01700b0"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-Thin.ttf",
+      "sha1": "09ba4dcd5509c8085bf88c665dcc51cbdfced27b"
+    },
+    {
+      "path": "Src/Assets/Fonts/Poppins-ThinItalic.ttf",
+      "sha1": "fb8fccca21550e71135f92bbaf8a2e8a12c90465"
+    },
+    {
+      "path": "Src/Assets/Fonts/YanoneKaffeesatz-Bold.ttf",
+      "sha1": "dda20e0e12a234e1e810a6897730dd7fbdf45b6b"
+    },
+    {
+      "path": "Src/Assets/Fonts/YanoneKaffeesatz-ExtraLight.ttf",
+      "sha1": "b2fc722c041dd54c6836674bdff040b65b958a1f"
+    },
+    {
+      "path": "Src/Assets/Fonts/YanoneKaffeesatz-Light.ttf",
+      "sha1": "d22d1c06dcbf3b8adad4f64465827a255624eaa3"
+    },
+    {
+      "path": "Src/Assets/Fonts/YanoneKaffeesatz-Medium.ttf",
+      "sha1": "1342eb2a8ae400a993927e4cbdfa1a5bf0d10b8a"
+    },
+    {
+      "path": "Src/Assets/Fonts/YanoneKaffeesatz-Regular.ttf",
+      "sha1": "8e52d8409fb1b576362596d9df5b012b11ad145e"
+    },
+    {
+      "path": "Src/Assets/Fonts/YanoneKaffeesatz-SemiBold.ttf",
+      "sha1": "efb8e3936801b1e2e12023fe44f9b9131b8388e8"
+    },
+    {
+      "path": "Src/Assets/Fonts/inter-extralight-italic.otf",
+      "sha1": "0562265f85c1d795eb8a0a7bdea045a42b6f2e7a"
+    }
+  ]
+}
