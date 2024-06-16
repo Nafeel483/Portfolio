@@ -20,12 +20,12 @@ export type Props = {
   navigation: any;
 };
 
-const GetStarted = (props: any) => {
+const ServicesOpening = (props: any) => {
   const { navigation } = props;
 
   return (
     <LinearGradient
-      colors={['#303032', '#000000']}
+      colors={['#F6F3EE', '#DADCD4']}
       style={Styles.backgroundContainer}>
       <SafeAreaView style={Styles.safeAreaContainer}>
         <StatusBar barStyle={'light-content'} />
@@ -34,21 +34,23 @@ const GetStarted = (props: any) => {
           <View style={Styles.headerContainer}>
             <View style={Styles.headerWrap}>
               <Image source={Images.logo} style={Styles.logoIcon} />
-              <GradientText itemColor={["#EAE6E4", "#A2D6C0"]}
-                style={Styles.brandTitle}>{`H N`}</GradientText>
+              <Text style={Styles.brandTitle}>{`H N`}</Text>
             </View>
             <Text style={Styles.brandSubtitle}>{`Innovative Solutions`}</Text>
           </View>
 
           <View style={Styles.centerContainer}>
-            <Image source={Images.mainIconOne} style={Styles.centerIcon} />
+            <Image source={Images.mainIcon} style={Styles.centerIcon} />
           </View>
           <View style={Styles.bottomContainer}>
             <View style={Styles.bottomWrap}>
-              <Text style={Styles.discoverText}>{`See The Work We’ve Done`}</Text>
-              <Text style={Styles.descriptionTxt}>{`Our work is a testament to our unwavering commitment to excellence and innovation. With a diverse portfolio of projects spanning various industries and domains, we take pride in delivering tailored solutions that not only meet but exceed our clients’ expectations.`}</Text>
-
-              <TouchableOpacity onPress={() => { navigation.navigate("ServicesOpening") }}>
+              <Text style={Styles.discoverText}>{`WE DEVELOP USING THE LATEST TECHNOLOGIES`}</Text>
+              <Text style={Styles.descriptionTxt}>{`Our Team Is Expert In Using The Most Trusted And Advance Technologies For Your Product So You Have Scalability And Endless Support.`}</Text>
+              <TouchableOpacity onPress={() => {
+                navigation.navigate("BottomTabView", {
+                  screen: "Home"
+                })
+              }}>
                 <LinearGradient
                   colors={['#910000', '#E14E68']}
                   style={Styles.nextButton}>
@@ -65,4 +67,4 @@ const GetStarted = (props: any) => {
   );
 }
 
-export default GetStarted;
+export default ServicesOpening;

@@ -26,19 +26,19 @@ import Profile from "../Screens/MainScreens/AboutMe";
 
 
 type BottomStackParamList = {
-  HomeTab: undefined,
-  CategoriesTab: undefined,
-  ProfileTab: undefined,
+  Home: undefined,
+  Categories: undefined,
+  Profile: undefined,
 };
 
 type HomeStackParamList = {
-  Home: undefined,
+  HomeTab: undefined,
 };
 type CategoriesStackParamList = {
-  Categories: undefined,
+  CategoriesTab: undefined,
 };
 type ProfileStackParamList = {
-  Profile: undefined,
+  ProfileTab: undefined,
 };
 
 
@@ -76,22 +76,22 @@ const ProfileStack = createStackNavigator<ProfileStackParamList>();
 
 export const HomeStacks = () => {
   return (
-    <HomeStack.Navigator initialRouteName="Home"
+    <HomeStack.Navigator initialRouteName="HomeTab"
       screenOptions={{
         headerShown: false,
       }}>
-      <HomeStack.Screen name="Home" component={Home} />
+      <HomeStack.Screen name="HomeTab" component={Home} />
     </HomeStack.Navigator>
   );
 }
 
 const CategoriesStacks = () => {
   return (
-    <CategoriesStack.Navigator initialRouteName="Categories"
+    <CategoriesStack.Navigator initialRouteName="CategoriesTab"
       screenOptions={{
         headerShown: false,
       }}>
-      <CategoriesStack.Screen name="Categories" component={Categories} />
+      <CategoriesStack.Screen name="CategoriesTab" component={Categories} />
 
     </CategoriesStack.Navigator>
   )
@@ -99,11 +99,11 @@ const CategoriesStacks = () => {
 
 const ProfileStacks = () => {
   return (
-    <ProfileStack.Navigator initialRouteName="Profile"
+    <ProfileStack.Navigator initialRouteName="ProfileTab"
       screenOptions={{
         headerShown: false,
       }}>
-      <ProfileStack.Screen name="Profile" component={Profile} />
+      <ProfileStack.Screen name="ProfileTab" component={Profile} />
 
     </ProfileStack.Navigator>
   )
@@ -120,25 +120,26 @@ export const BottomTabView = (props: any) => {
       tabBarOptions={{
         activeTintColor: '#ffffff',
         inactiveTintColor: '#223322',
-        activeBackgroundColor: 'red',
+        activeBackgroundColor: '#B40313',
       }}
       appearance={{
         shadow: true,
         floating: true,
-        whenActiveShow: TabElementDisplayOptions.ICON_ONLY,
-        dotSize: DotSize.SMALL,
+        whenActiveShow: TabElementDisplayOptions.BOTH,
+        dotSize: DotSize.MEDIUM,
       }}>
       <Tabs.Screen
-        name="HomeTab"
+        name="Home"
         component={HomeStacks}
         options={{
+          
           tabBarIcon: ({ focused, color }: any) => (
             <TabBarIcon focused={focused} tintColor={color} name="home" />
           ),
         }}
       />
       <Tabs.Screen
-        name="CategoriesTab"
+        name="Categories"
         component={CategoriesStacks}
         options={{
           tabBarIcon: ({ focused, color }: any) => (

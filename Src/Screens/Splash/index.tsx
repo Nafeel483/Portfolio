@@ -34,12 +34,12 @@ const Splash = (props: any) => {
     useNativeDriver: true,
   }).start();
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     // navigation.navigate("OpeningScreen")
-  //   }, 5000);
-  //   return () => clearTimeout(timer);
-  // }, [])
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigation.navigate("GetStarted")
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, [])
 
 
   return (

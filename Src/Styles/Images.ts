@@ -1,8 +1,8 @@
 const images = {
   logo: require('../Assets/Icons/logo.png'),
-  // trophy: require('../Assets/Icons/trophy.png'),
+  mainIcon: require('../Assets/Icons/mainIcon.png'),
 
-  // report: require('../Assets/Icons/report.png'),
+  mainIconOne: require('../Assets/Icons/mainIconOne.png'),
   // home: require('../Assets/Icons/home.png'),
   // message: require('../Assets/Icons/message.png'),
   // setting: require('../Assets/Icons/setting.png'),
@@ -20,49 +20,28 @@ const images = {
   // buttonWhite: require('../Assets/Icons/buttonWhite.png'),
 
 
-  // AuthIcons
-  // atDynamic: require('../Assets/Icons/AuthIcons/atDynamic.png'),
-  // calenderDynamic: require('../Assets/Icons/AuthIcons/calenderDynamic.png'),
-  // mapDynamic: require('../Assets/Icons/AuthIcons/mapDynamic.png'),
-  // mailDynamic: require('../Assets/Icons/AuthIcons/mailDynamic.png'),
-  // phoneDynamic: require('../Assets/Icons/AuthIcons/phoneDynamic.png'),
-  // verifyDynamic: require('../Assets/Icons/AuthIcons/verifyDynamic.png'),
-  // keyDynamic: require('../Assets/Icons/AuthIcons/keyDynamic.png'),
-  // lockDynamic: require('../Assets/Icons/AuthIcons/lockDynamic.png'),
-  // success: require('../Assets/Icons/AuthIcons/success.png'),
-  // verifyIcon: require('../Assets/Icons/AuthIcons/verifyIcon.png'),
-  // background: require('../Assets/Icons/AuthIcons/background.png'),
-  // faceID: require('../Assets/Icons/AuthIcons/faceID.png'),
-  // optionDynamic: require('../Assets/Icons/AuthIcons/optionDynamic.png'),
-  // calendarMonth: require('../Assets/Icons/AuthIcons/calendarMonth.png'),
-
-  // HomeIcons
-  // moneyDynamic: require('../Assets/Icons/HomeIcons/moneyDynamic.png'),
-  // explorerDynamic: require('../Assets/Icons/HomeIcons/explorerDynamic.png'),
-  // dollar: require('../Assets/Icons/HomeIcons/dollar.png'),
-  // lockerDynamic: require('../Assets/Icons/HomeIcons/lockerDynamic.png'),
-  // toolDynamic: require('../Assets/Icons/HomeIcons/toolDynamic.png'),
-  // heartDynamic: require('../Assets/Icons/HomeIcons/heartDynamic.png'),
-  // calculatorDynamic: require('../Assets/Icons/HomeIcons/calculatorDynamic.png'),
-  // folderDynamic: require('../Assets/Icons/HomeIcons/folderDynamic.png'),
-  // giftDynamic: require('../Assets/Icons/HomeIcons/giftDynamic.png'),
-  // logout: require('../Assets/Icons/HomeIcons/logout.png'),
-  // megaphone: require('../Assets/Icons/HomeIcons/megaphone.png'),
-  // sheildDynamic: require('../Assets/Icons/HomeIcons/sheildDynamic.png'),
-  // rocketDynamic: require('../Assets/Icons/HomeIcons/rocketDynamic.png'),
-  // megaphone: require('../Assets/Icons/HomeIcons/megaphone.png'),
-  // megaphone: require('../Assets/Icons/HomeIcons/megaphone.png'),
+  // logos
+  tuze: require('../Assets/Icons/logos/tuze.png'),
+  drink: require('../Assets/Icons/logos/drink.png'),
+  vibe: require('../Assets/Icons/logos/vibe.png'),
+  kuiktok: require('../Assets/Icons/logos/kuiktok.png'),
+  panther: require('../Assets/Icons/logos/panther.png'),
+  violet: require('../Assets/Icons/logos/violet.png'),
+  unhas: require('../Assets/Icons/logos/unhas.png'),
+  pldre: require('../Assets/Icons/logos/pldre.png'),
+  social: require('../Assets/Icons/logos/social.png'),
+  bring: require('../Assets/Icons/logos/bring.png'),
 
 
-  // DataIcons
-  // userPic: require('../Assets/DataIcons/userPic.png'),
-  // userPic1: require('../Assets/DataIcons/userPic1.png'),
-  // spedometer: require('../Assets/DataIcons/spedometer.png'),
-  // equifaxLogo: require('../Assets/DataIcons/equifaxLogo.png'),
-  // person: require('../Assets/DataIcons/person.png'),
-  // home: require('../Assets/DataIcons/home.png'),
+  // services
+  software: require('../Assets/Icons/services/software.png'),
+  web: require('../Assets/Icons/services/web.png'),
+  mobile: require('../Assets/Icons/services/mobile.png'),
+  ux: require('../Assets/Icons/services/ux.png'),
 
-
-
+  mind: require('../Assets/Icons/services/mind.png'),
+  groupUsers: require('../Assets/Icons/services/groupUsers.png'),
+  ownership: require('../Assets/Icons/services/ownership.png'),
+  crown: require('../Assets/Icons/services/crown.png'),
 };
 export default images;

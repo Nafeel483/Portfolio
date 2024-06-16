@@ -43,28 +43,27 @@ const styles = StyleSheet.create({
   brandTitle: {
     fontSize: 28,
     fontFamily: "DMSerifDisplay-Regular",
-    color: Colors.WhiteRich
+    color: Colors.BahamaBlue
   },
   brandSubtitle: {
     fontSize: 14,
     fontFamily: "PlaywriteUSTrad-Regular",
-    color: Colors.CyanBlue,
+    color: Colors.BahamaBlue,
     lineHeight: 22,
     textAlign: "center"
   },
   centerContainer: {
-    flex: 0.6,
-    justifyContent: "flex-start",
+    flex: 0.55,
+    justifyContent: "center",
     alignItems: "center"
   },
   centerIcon: {
-    width: widthScreen / 1.38,
+    width: widthScreen / 1.12,
     alignSelf: "center",
-    height: hp(36),
-    marginTop: hp(4)
+    height: hp(27),
   },
   bottomContainer: {
-    flex: 0.25,
+    flex: 0.3,
     justifyContent: "flex-end",
     // alignItems: "center"
   },
@@ -75,16 +74,17 @@ const styles = StyleSheet.create({
   discoverText: {
     fontSize: 24,
     fontFamily: "Inter-SemiBold",
-    color: Colors.GreyNurse,
-    textAlign: "center"
+    color: Colors.FibonacciBlue,
+    textAlign: "center",
+    lineHeight:35
   },
   descriptionTxt: {
-    fontSize: 13,
+    fontSize: 14,
     fontFamily: "Inter-Regular",
-    color: Colors.GreyNurse,
+    color: Colors.FibonacciBlue,
     lineHeight: 22,
     textAlign: "center",
-    marginTop: hp(2),
+    marginTop: hp(3),
   },
   nextButton: {
     width: 60,
